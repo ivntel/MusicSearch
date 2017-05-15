@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Music Search</string>
+    <string name="enter_search_text">Enter search text</string>
+    <string name="search">Search</string>
+    <string name="no_results">No results found</string>
+    <string name="cd_thumbnail">Thumbnail</string>
+    <string name="title_activity_lyrics">LyricsActivity</string>
+</resources>
