@@ -18,6 +18,7 @@ import static com.ivntel.android.musicsearch.LyricsActivity.ARG_SONG;
  */
 
 public interface WikiaSearchApi {
-    @GET("/api.php?func=getSong&artist=Tom+Waits&song=new+coat+of+paint&fmt=json")
-    void getWikiaSearchResults(Callback<LyricResponse> callback);
+
+    @GET("/lyric.do?apikey=651165cb611eab8d3eb75f097fbc7701&territory=US&reqtype=offlineviews&trackid=")
+    void getWikiaSearchResults(String artistNameAndSong, Callback<LyricResponse> callback);
 }

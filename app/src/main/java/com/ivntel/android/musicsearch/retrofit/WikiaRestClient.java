@@ -9,7 +9,7 @@ import retrofit.RestAdapter;
  */
 
 public class WikiaRestClient {
-    public static final String WIKIA_URL = "http://lyrics.wikia.com";
+    public static final String WIKIA_URL = "http://api.lyricfind.com";
     public static final boolean ENABLE_LOGGING = true;
 
     private static WikiaSearchApi wikiaSearchApi;

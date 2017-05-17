@@ -1,6 +1,7 @@
 package com.ivntel.android.musicsearch.model;
 
 import com.google.gson.annotations.SerializedName;
+import com.squareup.okhttp.Response;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,19 +13,25 @@ import java.util.List;
 public class LyricResponse implements Serializable {
     public static final String TAG = LyricResponse.class.getSimpleName();
 
-    public static final String SONG_LYRICS = "song";
+    public static final String RESPONSE = "response";
 
-    @SerializedName(SONG_LYRICS)
-    private List<Lyric> lyrics;
+    @SerializedName(RESPONSE)
+    private Response response;
 
-    public LyricResponse() {
+    public LyricResponse(){
+
     }
 
-    public List<Lyric> getLyrics() {
-        return lyrics;
+    public Response getResponse() {
+        return response;
     }
 
-    public void setLyrics(List<Lyric> lyrics) {
-        this.lyrics = lyrics;
+    public void setResponse(Response response) {
+        this.response = response;
+    }
+
+    public static String getRESPONSE() {
+        return RESPONSE;
     }
 }
+

@@ -4,26 +4,43 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-/**
- * Created by ivnte on 2017-05-14.
- */
-
 public class Lyric implements Serializable {
+
+
+    public static final String TITLE = "title";
 
     public static final String LYRICS = "lyrics";
 
-    @SerializedName(LYRICS)
-    private String songLyrics;
+    @SerializedName(TITLE)
+    private String title;
 
-    public String getSongLyrics() {
-        return songLyrics;
+    @SerializedName(LYRICS)
+    private String lyrics;
+
+    public Lyric() {
     }
 
-    public void setSongLyrics(String songLyrics) {
-        this.songLyrics = songLyrics;
+    public static String getTITLE() {
+        return TITLE;
     }
 
     public static String getLYRICS() {
         return LYRICS;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getLyrics() {
+        return lyrics;
+    }
+
+    public void setLyrics(String lyrics) {
+        this.lyrics = lyrics;
     }
 }
