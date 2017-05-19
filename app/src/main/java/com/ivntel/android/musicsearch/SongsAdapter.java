@@ -34,7 +34,6 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
     public SongsAdapter(Context context, List<Song> songs) {
         mContext = context;
         mSongs = songs;
-
     }
 
     public void updateData(List<Song> songs) {
@@ -79,7 +78,6 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
 
     }
     // Replace the contents of a view (invoked by the layout manager)
-
 
     // Return the size of your dataset (invoked by the layout manager)
     public static class ViewHolder extends RecyclerView.ViewHolder {

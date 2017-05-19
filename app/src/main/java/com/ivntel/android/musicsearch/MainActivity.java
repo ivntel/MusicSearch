@@ -124,6 +124,5 @@ public class MainActivity extends AppCompatActivity {
                 mNoResults.setVisibility(View.VISIBLE);
             }
         });
-
     }
 }

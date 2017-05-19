@@ -5,75 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/detail_image"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:contentDescription="@string/cd_thumbnail"
-        android:layout_marginTop="200dp"/>
+        <ImageView
+            android:id="@+id/detail_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/cd_thumbnail"
+            android:layout_marginTop="200dp"/>
 
-    <TextView
-        android:id="@+id/detail_artist"
-        android:layout_width="match_parent"
-        android:text="Artist"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/detail_artist"
+            android:layout_width="match_parent"
+            android:text="Artist"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/detail_song"
-        android:text="Song"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/detail_artist"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        <TextView
+            android:id="@+id/detail_song"
+            android:text="Song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_artist"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
 
-    <TextView
-        android:id="@+id/collection_name"
-        android:text="Collection Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/detail_song"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        <TextView
+            android:id="@+id/collection_name"
+            android:text="Collection Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_song"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
 
-    <TextView
-        android:id="@+id/song_genre"
-        android:text="Song genre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/collection_name"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/song_genre"
+            android:text="Song genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collection_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
-    <TextView
-        android:id="@+id/song_length"
-        android:text="Song length"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/song_genre"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/song_length"
+            android:text="Song length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/song_genre"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
-    <TextView
-        android:id="@+id/track_price"
-        android:text="Track Price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/song_length"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/track_price"
+            android:text="Track Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/song_length"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
-    <TextView
-        android:id="@+id/album_price"
-        android:text="Album price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/track_price"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
-    <TextView
-        android:id="@+id/lyrics"
-        android:text="Lyrics"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/album_price"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/album_price"
+            android:text="Album price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/track_price"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
+        <TextView
+            android:id="@+id/lyrics"
+            android:text="Lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/detail_image"
+            android:scrollbars="vertical"
+            android:maxLines="200"
+            android:paddingTop="10dp"/>
 </RelativeLayout>
+
