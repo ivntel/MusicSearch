@@ -41,7 +41,7 @@ public class LyricsActivity extends AppCompatActivity {
 
     public static final String ARG_SONG = "ARG_SONG";
     public static final String TAG = LyricsActivity.class.getSimpleName();
-    public static final String apiKey = "926933d99eb64dc89d878d79e0e75bc7";
+    public static final String apiKey = "";
     String myJSON,songLyrics="", detailsList="", firstTrackID=null;
     JSONArray peoples=null;
     private static final String TAG_MESSAGE="message";
